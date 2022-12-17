@@ -4,7 +4,7 @@
 #include <curl/types.h>
 #include <curl/easy.h>
 */
-#include <string>
+#include <string.h>
 
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
     size_t written = fwrite(ptr, size, nmemb, stream);

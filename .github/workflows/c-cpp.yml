@@ -25,3 +25,4 @@ jobs:
       run: |
         ./out/optxcurl https://www.apple.com/itunes/download/win64
         tree
+        ls -l

@@ -22,4 +22,6 @@ jobs:
     # - name: execute followrel
     #   run: ./out/followrel https://www.apple.com/itunes/download/win64
     - name: execut optxcurl
-      run: ./out/optxcurl https://www.apple.com/itunes/download/win64
+      run: |
+        ./out/optxcurl https://www.apple.com/itunes/download/win64
+        ls ./out

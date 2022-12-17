@@ -20,4 +20,4 @@ jobs:
     - name: make
       run: make
     - name: execute
-      run: ./out/optxcurl
+      run: ./out/followrel https://www.apple.com/itunes/download/win64

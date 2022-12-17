@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <curl/curl.h>
 
+// Callback function for writing data to a file
+size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
+    size_t written = fwrite(ptr, size, nmemb, stream);
+    return written;
+}
+
 int main(int argc, char *argv[])
 {
     if (argc != 2) {

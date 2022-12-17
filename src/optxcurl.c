@@ -15,8 +15,8 @@ int main(void) {
     CURL *curl;
     FILE *fp;
     CURLcode res;
-    char *url = "http://example.com/file.txt";
-    char outfilename[FILENAME_MAX] = "./bbb.txt";
+    char *url = "https://speed.hetzner.de/100MB.bin";
+    char outfilename[FILENAME_MAX] = "bbb.txt";
     curl = curl_easy_init();
     if (curl) {
         fp = fopen(outfilename,"wb");

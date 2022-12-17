@@ -1,3 +1,3 @@
-hellomake: optxcurl.c
+hellomake: src/optxcurl.c
 	mkdir out
-	gcc -fdiagnostics-color=always -g optxcurl.c -o ./out/optxcurl -I.
+	gcc -fdiagnostics-color=always -g src/optxcurl.c -o out/optxcurl -I.

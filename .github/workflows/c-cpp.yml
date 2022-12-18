@@ -17,20 +17,29 @@ jobs:
       run: |
         sudo apt-get -y update
         sudo apt-get install -y build-essential wget libcurl4-openssl-dev ca-certificates cmake tree
-    - name: make optxcurl
-      run: make optxcurl
 
-    - name: execut optxcurl
-      run: ./out/optxcurl https://www.apple.com/itunes/download/win64
+    - name: mkdir
+      run: mkdir out
+    
+    - name: cpp_curl
+      run: |
+        make cpp_curl
+        ./out/cpp_curl https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
 
-    - name: make optxget
-      run: make optxget
+    - name: optxcurl
+      run: |
+        make optxcurl
+        ./out/optxcurl https://www.apple.com/itunes/download/win64
 
-    - name: make optxg2
-      run: make optxg2
+    - name: optxget
+      run: |
+        make optxget
+        ./out/optxget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
 
-    - name: exec optxg2
-      run: ./curl_download https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
+    - name: followrel
+      run: |
+        make followrel
+        ./out/followrel https://www.apple.com/itunes/download/win64
 
     - name: dirtree
       run: |

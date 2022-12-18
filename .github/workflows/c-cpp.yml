@@ -29,6 +29,9 @@ jobs:
     - name: make optxg2
       run: make optxg2
 
+    - name: exec optxg2
+      run: ./curl_download https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
+
     - name: dirtree
       run: |
         tree

@@ -36,10 +36,10 @@ jobs:
         make optxget
         ./out/optxget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz 2cifar-10-binary.tar.gz
 
-    - name: followrel
-      run: |
-        make followrel
-        ./out/followrel https://www.apple.com/itunes/download/win64
+    # - name: followrel
+    #   run: |
+    #     make followrel
+    #     ./out/followrel https://www.apple.com/itunes/download/win64
 
     - name: dirtree
       run: |

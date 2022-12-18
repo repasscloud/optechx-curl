@@ -17,12 +17,14 @@ jobs:
       run: |
         sudo apt-get -y update
         sudo apt-get install -y libcurl4-openssl-dev tree
-    - name: make all
-      run: make
-    - name: execute optxget
-      run: ./out/optxget https://speed.hetzner.de/100MB.bin 100MB.bin
+    - name: make optxcurl
+      run: make optxcurl
     - name: execut optxcurl
       run: |
         ./out/optxcurl https://www.apple.com/itunes/download/win64
         tree
         ls -l
+    - name: make optxget
+      run: make optxget
+    - name: execute optxget
+      run: ./out/optxget https://speed.hetzner.de/100MB.bin 100MB.bin

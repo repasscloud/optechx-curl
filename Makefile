@@ -4,4 +4,3 @@ optxcurl: src/optxcurl.c
 
 optxget: src/optxget.cpp
 	g++ -o out/optxget src/optxget.cpp -lcurl
-	./out/optxget https://speed.hetzner.de/100MB.bin fish.bin

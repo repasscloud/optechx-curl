@@ -45,3 +45,8 @@ jobs:
       run: |
         tree
         ls -l
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: optxget
+        path: ./out/optxget

@@ -19,13 +19,17 @@ jobs:
         sudo apt-get install -y build-essential wget libcurl4-openssl-dev ca-certificates cmake tree
     - name: make optxcurl
       run: make optxcurl
+
     - name: execut optxcurl
-      run: |
-        ./out/optxcurl https://www.apple.com/itunes/download/win64
-        tree
-        ls -l
+      run: ./out/optxcurl https://www.apple.com/itunes/download/win64
+
     - name: make optxget
       run: make optxget
 
     - name: make optxg2
       run: make optxg2
+
+    - name: dirtree
+      run: |
+        tree
+        ls -l

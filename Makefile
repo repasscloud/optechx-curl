@@ -3,4 +3,4 @@ optxcurl: src/optxcurl.c
 	gcc -fdiagnostics-color=always -g src/optxcurl.c -o out/optxcurl -I. -lcurl
 
 optxget: src/optxget.cpp
-	g++ -o out/optxget src/optxget.cpp -lcurl
+	g++ -o optxget src/optxget.cpp -lcurl
